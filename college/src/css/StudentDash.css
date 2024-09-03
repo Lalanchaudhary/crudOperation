@@ -1,0 +1,183 @@
+.main-box {
+    height: 70px;
+    width: 100%;
+    padding: 50px 50px;
+    /* background-color: #AD49E1; */
+}
+
+.inner-box {
+    width: 92%;
+    box-shadow: 0 2px 0px rgba(128, 128, 128, 0.499);
+    border-radius: 4px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap; /* Added to allow wrapping of columns */
+    margin: 10px auto;
+    justify-content: space-between;
+    /* padding: 0px 20px; */
+    background: #fff;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    background-color: #cddcfabd;
+}
+.colums {
+    width: 16%;
+    /* border-right: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 0px 0px 40px; */
+    /* padding: 0px 10px; */
+}
+.colums2
+{
+    justify-content: start;
+    padding: 0 20px;
+}
+
+.btn-div5 {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.add-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.admin-search{
+    height: 50px;
+    width: 30%;
+    /* padding: 0px 40px; */
+    border-radius: 6px;
+    border: 0px;
+    transition:All linear 0.4s;
+}
+
+.search_icon{
+    position: absolute;
+    left: 25px;
+}
+.add-user-btn251 {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #304767;
+    color: white;
+    margin: 20px 0px;
+}
+
+.header_container2{
+    height: 60px;
+    box-shadow: 0 0 3px grey;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 30px; */
+    background-color: #fff;
+}
+.box{
+    width: 16%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* border: 1px solid; */
+    justify-content: center;
+}
+.box span{
+    font-size: 17px;
+}
+/* Tablet view */
+@media (max-width: 768px) {
+    .main-box {
+        padding: 0px 20px;
+    }
+
+    .colums, .btn-div5 {
+        width: 50%; /* Adjusting width to fit two columns per row */
+    }
+
+    .btn-div5 {
+        gap: 5px; /* Reducing gap for smaller screens */
+    }
+
+    .add-user {
+        justify-content: center; /* Centering the add user button */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .main-box {
+        padding: 0px 10px;
+    }
+
+    .colums, .btn-div5 {
+        width: 100%; /* Adjusting width to fit one column per row */
+        border-right: none; /* Removing border-right for mobile view */
+        border-bottom: 1px solid; /* Adding bottom border instead */
+    }
+
+    .btn-div5 {
+        gap: 5px; /* Reducing gap for smaller screens */
+    }
+
+    .add-user {
+        justify-content: center; /* Centering the add user button */
+        width: 100%; /* Full width on mobile */
+    }
+
+    .add-user-btn25 {
+        width: 100%; /* Full width on mobile */
+        margin: 10px 0px; /* Reducing margin for mobile view */
+    }
+}
+/* $delete-red: red; */
+.btn1 {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid grey;
+    height: 35px;
+    padding: 0 10px 0 10px;
+    letter-spacing: .25px;
+    border-radius: 24px;
+    cursor: pointer;
+    gap: 5px;
+  }
+  
+  .btn-delete {
+    font-size: 14px;
+    color: red;
+    }
+
+    .btn2{
+        display: flex;
+        align-items: center;
+        background: none;
+        border: 1px solid grey;
+        height: 35px;
+        padding: 0 16px;
+        letter-spacing: .25px;
+        border-radius: 24px;
+        cursor: pointer;
+        gap: 5px;
+      }
+      
+.admin{
+    color: green;
+}
+  

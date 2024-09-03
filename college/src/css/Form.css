@@ -1,0 +1,77 @@
+.bdy2 {
+    height: 110vh;
+    width: 100%;
+    /* background-color: rgba(224, 216, 216, 0.521); */
+    background-color: '#fff';
+    display: flex;
+    flex-wrap: wrap; /* Added to allow wrapping of boxes */
+    justify-content: center; /* Center items horizontally */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.boxes1, .boxes12, .boxes13, .boxes15 {
+    padding: 15px 35px;
+    width: 95%;
+    margin: 5px 5px 25px 0px;
+    /* background-color: rgb(245, 245, 245); */
+    border: 1px solid;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+.college-icon{
+    position: absolute;
+    left: 10px;
+    top:25px;
+}
+.boxes12 {
+    width: 10%;
+}
+
+.boxes15 {
+    width: 27%;
+}
+
+.btn1111 {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    width: 95%;
+    background-color: rgb(71, 30, 134);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(72, 72, 72);
+    transition: all 2s;
+    /* width: 100%; Ensure button takes full width in smaller screens */
+}
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .boxes1, .boxes12, .boxes13, .boxes15 {
+        width: 45%; /* Adjusting width to fit two columns per row */
+        margin: 10px; /* Adding margin for spacing */
+    }
+
+    .boxes12 {
+        width: 45%; /* Ensure consistent width for smaller boxes */
+    }
+
+    .boxes15 {
+        width: 45%; /* Adjust width for consistency */
+    }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+    .boxes1, .boxes12, .boxes13, .boxes15 {
+        width: 100%; /* Adjusting width to fit one column per row */
+        margin: 10px 0; /* Adjust margin for mobile view */
+    }
+
+    .boxes12 {
+        width: 100%; /* Full width for smaller boxes */
+    }
+
+    .boxes15 {
+        width: 100%; /* Full width for consistency */
+    }
+}
